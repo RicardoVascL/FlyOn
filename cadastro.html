@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="layout/styles/cadastro.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form-image">
+            <img src="img/giphy.gif">
+        </div>
+
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadrastre-se</h1>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="fistname">Nome</label>
+                        <input id="fistname" type="text" name="fistname" placeholder="Nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Sobrenome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Seu E-mail" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <label for="number">Telefone</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Senha" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="Confirmpassword">Confirme Sua Senha</label>
+                        <input id="Confirmpassword" type="password" name="Confirmpassword" placeholder="Confirme Sua Senha" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="Confirmpassword">CPF</label>
+                        <!--<input type="text" name="cpf" pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})">-->
+                        <input type="text" name="CPF" placeholder="CPF" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="Confirmpassword">Endereço</label>
+                        <input type="text" name="Endereço" placeholder="Endereço" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="Confirmpassword">Idade</label>
+                        <input type="text" name="CEP" placeholder="Sua Idade" required>
+                    </div>
+                </div>
+
+                <div class="gender-input">
+                    <div class="gender-title">
+                        <h6>Genero</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input type="radio" id="female" name="gender">
+                            <label class="txtcolor" for="female">Feminino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input type="radio" id="male" name="gender">
+                            <label class="txtcolor" for="male">Masculino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input type="radio" id="others" name="gender">
+                            <label class="txtcolor" for="others">Outros</label>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="card-btn">
+                        <button class="register-bnt"><a href="index.html">Registrar-se</a></button>
+                        <span>ou</span>
+                        <button class="login-btn"><a href="index.html">Login</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
